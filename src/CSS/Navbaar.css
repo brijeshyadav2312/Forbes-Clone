@@ -1,0 +1,39 @@
+
+.navbaar{
+    background-color: #191616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    font-family: 'Fjalla One', sans-serif !important;
+}
+.navbaar span{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    background-color: #191616;
+    color: white;
+}
+.navbaar span span:first-child{
+    font-size: 3rem;
+}
+.navbaar span span:last-child{
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 480px){
+    .navbaar{
+        padding: 1rem 0;
+    }
+    .navbaar span{
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    .navbaar span span:first-child{
+        font-size: 5rem;
+    }
+    .navbaar span span:last-child{
+        font-size: 5rem;
+    }
+}

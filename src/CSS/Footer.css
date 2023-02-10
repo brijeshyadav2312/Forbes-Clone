@@ -1,0 +1,22 @@
+.footerHead{
+    background-color: #FFF35E;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-family: 'Fjalla One', sans-serif !important;
+    letter-spacing: 2px;
+}
+.aboutFooter{
+    padding: 2rem;
+}
+.footerFooter{
+    background-color: #DFDEDF;
+    text-align: center;
+}
+.footerFooter>p{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.footerFooter>p>p{
+    font-size: 0.8rem;
+}

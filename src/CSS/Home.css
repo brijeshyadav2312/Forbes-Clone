@@ -1,0 +1,188 @@
+.homeSection{
+    padding: 0 2rem;
+}
+.homeHeader{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+.filter select{
+    outline: none;
+    width: 150px;
+    padding: 0.5rem;
+    height: fit-content;
+}
+.filter span{
+    cursor: pointer;
+}
+
+.search{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
+    width: 350px;
+    height: 50px;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: rgb(148, 148, 148);
+    border-radius: 7px;
+    top: 0;
+}
+
+.search input{
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    background-color: transparent;
+    outline: none;
+}
+table{
+    width: 100%;
+}
+.tableData{
+    display: flex;
+    justify-content: center;
+}
+tr img{
+    width: 100px;
+}
+
+tbody tr td:nth-child(2), tbody tr td:nth-child(3){
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+tbody tr td{
+    padding: 0.3rem 0.5rem;
+}
+thead tr td{
+    white-space: nowrap;
+    padding: 0.5rem;
+}
+table,td,tr{
+    border-collapse: collapse;
+}
+
+.pageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+.pagination{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+}
+.pagination p,.navigation{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.1rem;
+}
+.pagination p:hover{
+    background-color: black;
+    color: white;
+}
+.active{
+    background-color: black !important;
+    color: white !important;
+}
+.imageSkleton{
+    width: 100px !important;
+    height: 100px !important;
+}
+.nameSkleton{
+    width: 200px !important;
+    height: 50px;
+}
+.heightSkletan{
+    height: 50px !important;
+}
+.activeClass{
+    background-color: #FFF25F;
+    padding: 0.2rem 0.5rem;
+    color: #356792;
+}
+
+@media only screen and (max-width:480px){
+    .homeSection{
+        padding: 0 1rem;
+    }
+    .homeHeader{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    td:nth-child(n+5){
+        display: none;
+    }
+    .tableData{
+        width: 100%;
+        padding: 0;
+        padding: 1rem 0;
+    }
+    thead tr{
+        font-size: 0.8rem;
+    }
+    tr img{
+        width: 50px;
+    }
+    tbody tr td:nth-child(2),
+    tbody tr td:nth-child(3){
+        font-size: 1rem;
+    }
+    .filter{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .filter p{
+        display: none;
+    }
+    .filter select{
+        outline: none;
+        width: 320px;
+    }
+    .pageSection{
+        margin: 1rem 0;
+    }
+    .pagination p,.navigation{
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 0.9rem;
+    }
+    .imageSkleton{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .nameSkleton{
+        width: 100px !important;
+        height: 20px;
+    }
+    .heightSkletan{
+        height: 20px !important;
+    }
+    .pagination p:hover{
+        background-color: transparent;
+        color: black;
+    }
+}
